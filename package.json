@@ -1,0 +1,27 @@
+{
+  "name": "martin",
+  "version": "0.0.1",
+  "description": "Martin strives to combine the power of AI and technology to create a multidisciplinary robot which can be extended to the needs of humans.",
+  "keywords": [
+    "martin",
+    "ai",
+    "assistant"
+  ],
+  "homepage": "https://dreamworxmedia.com",
+  "bugs": {
+    "url": "https://dreamworxmedia.com",
+    "email": "martin-ai@dreamworxmedia.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Martin de Keijzer",
+    "url": "https://martindekeijzer.nl"
+  },
+  "dependencies": {
+    "server": "^1.0.33"
+  },
+  "scripts": {
+    "postinstall": "node main.js",
+    "start": "node main.js"
+  }
+}
