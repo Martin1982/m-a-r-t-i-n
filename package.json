@@ -1,27 +1,70 @@
 {
-  "name": "martin",
-  "version": "0.0.1",
-  "description": "Martin strives to combine the power of AI and technology to create a multidisciplinary robot which can be extended to the needs of humans.",
-  "keywords": [
-    "martin",
-    "ai",
-    "assistant"
-  ],
-  "homepage": "https://dreamworxmedia.com",
-  "bugs": {
-    "url": "https://dreamworxmedia.com",
-    "email": "martin-ai@dreamworxmedia.com"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Martin de Keijzer",
-    "url": "https://martindekeijzer.nl"
-  },
-  "dependencies": {
-    "server": "^1.0.33"
-  },
+  "name": "vue-2-webpack-4-boilerplate",
+  "version": "1.0.0",
+  "description": "Vue 2 application with webpack 4 boilerplate",
   "scripts": {
-    "postinstall": "node main.js",
-    "start": "node main.js"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress",
+    "staging": "cross-env NODE_ENV=staging webpack",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samteb/vue-2-webpack-4-boilerplate"
+  },
+  "keywords": [
+    "Vue",
+    "Webpack 4"
+  ],
+  "author": "samteb <sam.teboul@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/samteb/vue-2-webpack-4-boilerplate",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "vue": "^2.6",
+    "vue-router": "^3.5.1",
+    "vuetify": "^2.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-decorators": "^7.14.2",
+    "@babel/plugin-proposal-json-strings": "^7.14.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/preset-env": "^7.14.2",
+    "acorn": "^8.2.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "compression-webpack-plugin": "^2.0",
+    "cross-env": "^5.2",
+    "css-loader": "^2.1",
+    "deepmerge": "^4.2.2",
+    "eslint": "^5.16",
+    "eslint-config-standard": "^10.2",
+    "eslint-friendly-formatter": "^3.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-node": "^4.2",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "friendly-errors-webpack-plugin": "^1.7",
+    "html-webpack-plugin": "^3.2",
+    "mini-css-extract-plugin": "^0.5",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0",
+    "sass": "^1.34.0",
+    "sass-loader": "^8.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "vue-loader": "^15.9.7",
+    "vue-style-loader": "^4.1",
+    "vue-template-compiler": "^2.6",
+    "webpack": "^4.46.0",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-merge": "^4.2"
   }
 }
