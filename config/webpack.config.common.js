@@ -29,6 +29,13 @@ const webpackConfig = {
                 include: [ helpers.root('src') ]
             },
             {
+                test: /.css$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                ]
+            },
+            {
                 test: /\.s(c|a)ss$/,
                 use: [
                     'vue-style-loader',
@@ -49,7 +56,7 @@ const webpackConfig = {
     },
     plugins: [
         new VueLoaderPlugin(),
-        new HtmlPlugin({ template: 'index.html', chunksSortMode: 'dependency' })
+        new HtmlPlugin({ template: 'index.html' })
     ]
 };
 
